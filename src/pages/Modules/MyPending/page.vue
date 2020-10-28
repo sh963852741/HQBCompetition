@@ -39,8 +39,7 @@ export default {
                 }
             ],
             dic: {
-                "修改社团基本信息申请": "/manage/org/orgdetailform",
-                "社团活动申请": "/manage/org/activityform"
+                "专利估值申请表": "/manage/org/orgdetailform"
             }
         }
     },

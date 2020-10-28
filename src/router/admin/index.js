@@ -109,10 +109,10 @@ module.exports = {
         layout: "empty",
         component: () => import(/* webpackChunkName: "Articals" */"@p/Modules/NewsDetail")
     },
-    UploadOrgList: {
+    AddEstimation: {
         path: "/manage/upload-org-list",
         layout: "admin",
-        component: () => import(/* webpackChunkName: "OrgManager" */"@p/Modules/UploadOrgList")
+        component: () => import(/* webpackChunkName: "OrgManager" */"@p/Modules/AddApplication")
     },
     DownloadOrgList: {
         path: "/manage/download-org-list",

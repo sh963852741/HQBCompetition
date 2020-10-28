@@ -337,10 +337,10 @@ export default {
                     title: '部门',
                     key: 'departName'
                 },
-                {
-                    title: '学/工号',
-                    key: 'Code'
-                },
+                // {
+                //     title: '学/工号',
+                //     key: 'Code'
+                // },
                 {
                     title: '手机',
                     key: 'Mobile'

@@ -1,7 +1,6 @@
 <template>
     <Layout class="main-layer">
         <Sider ref="side1" hide-trigger collapsible :collapsed-width="78" v-model="isCollapsed">
-            <i-row type="flex" justify="center"><Avatar class="logo" :src="app.webInfo.avatar" size="64" /></i-row>
             <Menu ref="menu" theme="dark" id="main-menu" width="auto" :class="menuitemClasses" :open-names="openMenus.map(e => e.ActionName || e.Text)" :active-name="activeMenu">
                 <template v-for="(item, index) in menus">
                     <i-menu-item v-if="item.Items && !item.Items.length" :key="index" :to="{ name: item.ActionName }" :name="item.ActionName || item.Text">
@@ -73,7 +72,7 @@
             <Content :style="{margin: '20px'}" class="content">
                 <slot></slot>
             </Content>
-            <Footer class="layout-footer-center">&copy;&nbsp;2020&nbsp;<a href="https://www.xmu.edu.cn/">厦门大学</a>&nbsp;保留所有权利</Footer>
+            <Footer class="layout-footer-center">&copy; 2020 本制作组 保留所有权利</Footer>
         </Layout>
     </Layout>
 </template>

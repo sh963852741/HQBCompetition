@@ -1,7 +1,7 @@
 <template>
     <i-row>
         <i-row type="flex" align="middle" style="height: 10vh; padding: 10px;">
-            <div :style="{background: `url(${newBanner}) no-repeat`, 'background-size': 'contain'}" class="banner" />
+            <p style="font-size: 2.4rem">&nbsp;Agritech——科技农业知识产权估值融资平台</p>
         </i-row>
         <i-row :style="bgImg" style="height: 80vh;">
             <i-col span="5" offset="17" class="card" v-show="app.userInfo.isLogined">
@@ -30,27 +30,24 @@
                     </i-row>
                     <i-row type="flex" style="flex-direction: column;">
                         <i-button @click="login()" :loading='isloading' size="large">直接登录</i-button>
-                        <i-button @click="toXmuLogin()" type="primary" long size="large"  style="margin-top: 16px">用厦大账号登录</i-button>
-                        <!-- <Dropdown style="margin-top: 16px">
+                        <Dropdown style="margin-top: 16px">
+                            <i-button type="primary" long size="large" >快捷登录</i-button>
                             <DropdownMenu slot="list">
-                                <DropdownItem @click.native="login('15102242660', '88888888')">学生</DropdownItem>
-                                <DropdownItem @click.native="login('24320172203215', '7VJk86Bb')">社团</DropdownItem>
-                                <DropdownItem @click.native="login('2016190002', '7VJk86Bb')">指导老师</DropdownItem>
-                                <DropdownItem @click.native="login('2011100099', '7VJk86Bb')">业务指导</DropdownItem>
-                                <DropdownItem @click.native="login('15102246798', '123456')">社团管理部</DropdownItem>
-                                <DropdownItem @click.native="login('admin', '88888888')">团委</DropdownItem>
+                                <DropdownItem @click.native="login('runhan', '88888888')">管理员</DropdownItem>
+                                <DropdownItem @click.native="login('12323', '88888888')">企业</DropdownItem>
+                                <DropdownItem @click.native="login('15124569856', '88888888')">银行</DropdownItem>
                             </DropdownMenu>
-                        </Dropdown> -->
+                        </Dropdown>
                     </i-row>
                 </i-card>
             </i-col>
         </i-row>
         <i-row type="flex" justify="center" align="middle" class="foot">
             <i-col>
-                厦门大学学生社团管理系统
+                花旗杯——Agritech
             </i-col>
             <i-col>
-                &copy; 2020 厦门大学 保留所有权利
+                &copy; 2020 本制作组 保留所有权利
             </i-col>
         </i-row>
     </i-row>

@@ -24,7 +24,7 @@
             <FormItem label="邮箱" prop="Email">
                 <Input v-model="model.Email" placeholder="请输入邮箱" />
             </FormItem>
-            <FormItem label="学/工号" prop="Code">
+            <FormItem label="学/工号" prop="Code" style="display: none;">
                 <Input v-model="model.Code" placeholder="请输入学/工号" />
             </FormItem>
             <FormItem label="姓名" prop="RealName">
@@ -82,7 +82,7 @@ export default {
                     return;
                 }
 
-                axios.post("/api/security/SaveUser", model, msg => {
+                axios.post("/api/security/SaveUser", {...model, UserPassword: '88888888'}, msg => {
                     if (!msg.success) {
                         this.$Message.error(msg.msg);
                     } else {

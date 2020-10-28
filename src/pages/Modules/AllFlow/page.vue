@@ -36,8 +36,7 @@ export default {
                 }
             ],
             dic: {
-                "修改社团基本信息申请": "/manage/org/orgdetailform",
-                "社团活动申请": "/manage/org/activityform"
+                "专利估值申请表": "/manage/org/orgdetailform"
             }
         }
     },
@@ -48,15 +47,7 @@ export default {
     methods: {
         getFlows () {
             this.loading = true;
-            axios.post("/api/workflow/AllFlow", {name: "社团活动申请"}, msg => {
-                if (msg.success) {
-                    this.tableData = this.tableData.concat(msg.data);
-                } else {
-                    this.$Message.warning(msg.msg);
-                }
-                this.loading = false;
-            });
-            axios.post("/api/workflow/AllFlow", {name: "修改社团基本信息申请"}, msg => {
+            axios.post("/api/workflow/AllFlow", {name: "专利估值申请表"}, msg => {
                 if (msg.success) {
                     this.tableData = this.tableData.concat(msg.data);
                 } else {
